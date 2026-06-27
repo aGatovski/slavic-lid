@@ -123,7 +123,7 @@ Average branch F1 at Tier 3: East 0.838, West 0.898, South 0.685. All three Sout
 ---
 
 ## Repository
-
+```
 slavic-lid/
 ├── models/
 │   ├── README.md
@@ -144,6 +144,7 @@ slavic-lid/
 │   └── bg_dialects.ipynb        # Bulgarian dialect exploration
 ├── README.md
 └── report.pdf
+```
 
 ---
 
