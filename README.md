@@ -120,6 +120,33 @@ Polish nasal vowels and dense consonant clusters produce a highly distinctive ac
 **6. South Slavic branch is consistently the hardest.**
 Average branch F1 at Tier 3: East 0.838, West 0.898, South 0.685. All three South Slavic languages are minority test classes (together 10.4% of test), compounding the effect of within-branch linguistic similarity.
 
+---
+
+## Repository
+
+slavic-lid/
+├── models/
+│   ├── README.md
+│   ├── tier1_a.pt
+│   ├── tier1_b.pt
+│   ├── tier2_b.pt
+│   └── tier3_b.pt               # Full set on HuggingFace
+├── notebooks/
+│   ├── tier1_a.ipynb            # Track A · Tier 1: CNN + CE
+│   ├── tier1_b.ipynb            # Track B · Tier 1: CNN + label smoothing
+│   ├── tier1_c.ipynb            # Track C · Tier 1: CNN + MFCC+Δ+ΔΔ
+│   ├── tier2_a.ipynb            # Track A · Tier 2: CNN + BiLSTM + CE
+│   ├── tier2_b.ipynb            # Track B · Tier 2: Transformer + AAM-Softmax
+│   ├── tier2_c.ipynb            # Track C · Tier 2: CNN + BiLSTM + Mixup
+│   ├── tier3_a.ipynb            # Track A · Tier 3: XLS-R-300M + CE
+│   ├── tier3_b.ipynb            # Track B · Tier 3: XLS-R-300M + AAM-Softmax
+│   ├── tier3_c.ipynb            # Track C · Tier 3: Whisper-small
+│   └── bg_dialects.ipynb        # Bulgarian dialect exploration
+├── README.md
+└── report.pdf
+
+---
+
 ## References
 
 - Radford et al. — [Whisper: Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) (2022)
